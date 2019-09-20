@@ -1,0 +1,9 @@
+<button (click)="onClicked($event)">Click Me</button>
+<p>
+  {{ clickMessage }}
+</p>
+<hr>
+<input #nameInput type="text" #name (keyup.enter)="onkey(nameInput)" (blur)="onkey(nameInput)">
+<p>
+  {{values}}
+</p>
