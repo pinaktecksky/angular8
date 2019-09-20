@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let author of authors">
+    <p [class.nameClass]="nameClass" [style.color]="author.name=='Pinak Patel'?'white':'black'" (click)="authorClicked(author.name)" [ngStyle]="childStyles">{{author.name}}</p>
+    <p [class.bookClass]="bookClass" [ngClass]="childClasses">{{author.bookName}}</p>
+  </li>
+</ul>
