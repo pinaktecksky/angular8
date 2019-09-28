@@ -4,5 +4,7 @@
     {{ title }}
   </h1>
 </div>
-<app-click-me></app-click-me>
+<p>My date of Birth is {{dob|date: format}}</p>
+<p>My Strength is {{5|exponentialStrength:2}}</p>
+<button (click)="toggleFormat()">Toggle Format</button>
 <router-outlet></router-outlet>
