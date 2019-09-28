@@ -4,5 +4,20 @@
     {{ title }}
   </h1>
 </div>
-<app-click-me></app-click-me>
+
+<p>My date of Birth is {{dob|date: format}}</p>
+<p>My Strength is {{5|exponentialStrength:2}}</p>
+<button (click)="toggleFormat()">Toggle Format</button>
+<h3>Male</h3>
+<div>
+  <ul>
+    <li *ngFor="let person of people|gender:'male'">{{person.name}}</li>
+  </ul>
+</div>
+<h3>Female</h3>
+<div>
+  <ul>
+    <li *ngFor="let person of people|gender:'female'">{{person.name}}</li>
+  </ul>
+</div>
 <router-outlet></router-outlet>
