@@ -4,5 +4,12 @@
     {{ title }}
   </h1>
 </div>
-<app-click-me></app-click-me>
+<label>
+Please select one color
+<input type="radio" (click)="color='green'" name="radio"> Green
+<input type="radio" (click)="color='blue'" name="radio">Blue
+<input type="radio" (click)="color='brown'" name="radio">Brown
+</label>
+<p appTestDirective [highlightColor]=color >This is the test text for custom directive</p>
+
 <router-outlet></router-outlet>
