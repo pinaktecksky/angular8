@@ -4,13 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClickMeComponent } from './click-me/click-me.component';
-import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClickMeComponent,
-    ExponentialStrengthPipe
+    ClickMeComponent
   ],
   imports: [
     BrowserModule,
